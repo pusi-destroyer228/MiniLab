@@ -1,0 +1,685 @@
+
+@font-face {
+    font-family: "SegoeUI";
+    src: url(../fonts/SegoeUI.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 1px;
+}
+
+a {
+    cursor: url(../css/cursor.cur), auto;
+}
+
+body p,a{
+    font-family: 'Segoe UI';
+}
+
+body h1,h2,h3,h4{
+    font-family: 'Segoe UI';   
+}
+
+.header-line {
+    position: fixed;
+    width: 100%;
+    height: 60rem;
+    top: 0;
+    filter: drop-shadow(0.707px 0.707px 4px rgba(0, 0, 0, 0.12));
+    box-shadow: inset 0px -1px 0px #e6e6e6;
+    background-color: #ffffff;
+    z-index: 2;
+}
+
+.HeaderLineWrap {
+    display: flex;
+    justify-content: space-between;
+    width: 1410rem;
+    margin: auto;
+}
+
+.FirstPartHeader {
+    display: flex;
+    justify-content: space-between;
+    width: 700rem;
+
+}
+
+header ul {
+    display: flex;
+    column-gap: 50rem;
+}
+
+
+.SecondPartHeader {
+    display: flex;
+    width: 360rem;
+    padding-top: 10rem;
+}
+
+.logo {
+    margin-top: 20rem;
+}
+
+.HeaderLineText {
+    display: flex;
+    justify-content: space-between;
+    width: 515rem;
+}
+
+#asas:hover .menu {
+    display: inline-block;
+}
+
+#asas{
+    width: 150px;
+    transition: 0.2s;
+}
+
+#asas:hover {
+    width: 150px;
+    background-color: #f2f2f2;
+}
+
+#asas:hover>a {
+    margin-left: 25rem;
+}
+
+.more:after {
+    content: url(../css/img/arr-right.png);
+    position: relative;
+    left: 15rem;
+}
+
+#asas:hover .more:after {
+    content: url(../css/img/arr-down.png);
+}
+
+.more {
+    position: relative;
+}
+
+.HeaderLineText a {
+    font-size: 15rem;
+    line-height: 4em;
+    color: #262626;
+    text-align: right;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.HeaderLineText a:hover {
+    color: #227bc1;
+    text-decoration: underline;
+}
+
+.search {
+    position: relative;
+    width: 264px;
+    height: 38px;
+    background-color: #ffffff;
+    border: 1px solid #999999;
+    cursor: url(../css/cursor.cur), auto;
+}
+
+input {
+    border: none;
+    outline: none;
+}
+
+.SearchWrap {
+    padding-left: 13rem;
+    padding-top: 12rem;
+}
+
+.search a {
+    position: absolute;
+    opacity: 0.702;
+    font-size: 15rem;
+    line-height: 1em;
+    color: #262626;
+    text-align: right;
+    text-decoration: none;
+    transition: 0.2s;
+    right: 0;
+}
+
+.search a::after {
+    content: url(../css/img/search.png);
+    position: relative;
+    right: 12px;
+}
+
+.search a:hover {
+    filter: brightness(0.5)
+}
+
+.BuyBasket {
+    margin-top: 10rem;
+    padding-left: 22rem;
+    padding-right: 22rem;
+    transition: 0.2s;
+}
+
+.BuyBasket:hover {
+    transform: scale(1.2);
+}
+
+.BuyBasket a:before {
+    content: url(../css/img/cart.png);
+    width: 18rem;
+    height: 15rem;
+}
+
+.login a {
+    font-size: 15rem;
+    line-height: 2em;
+    color: #262626;
+    text-align: right;
+    text-decoration: none;
+}
+
+.login a:hover {
+    color: #227bc1;
+}
+
+.menu {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 338rem;
+    background-color: #f2f2f2;
+    border: 1px solid #e6e6e6;
+    padding-bottom: 13rem;
+    box-sizing: border-box;
+    left: 0;
+    top: 60px;
+}
+
+.MenuWrap {
+    display: flex;
+    justify-content: space-between;
+    width: 1170rem;
+    margin: auto;
+    padding-top: 37rem;
+}
+
+.menu h4 {
+    font-size: 15rem;
+    line-height: 1.4em;
+    color: #262626;
+}
+
+.menu ul {
+    display: block;
+}
+
+.menu li>a {
+    font-size: 15rem;
+    line-height: 2em;
+    color: #616161;
+    text-decoration: none;
+}
+
+.menu li>a:hover {
+    text-decoration: underline;
+}
+
+.MenuZag {
+    width: 120rem;
+}
+
+#zag1 {
+    margin-bottom: 27rem;
+}
+
+#zag2 {
+    margin-bottom: 24rem;
+}
+
+#zag3,
+#zag4,
+#zag5,
+#zag6 {
+    margin-bottom: 45rem;
+}
+
+.look-all {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 40px;
+    background-color: #e6e6e6;
+    text-align: center;
+}
+
+.look-all-wrap {
+    width: 100%;
+    margin: 8rem auto;
+}
+
+.look-all a {
+    font-size: 14rem;
+    letter-spacing: 1px;
+    line-height: 1.7em;
+    text-transform: uppercase;
+    color: #262626;
+    text-decoration: none;
+}
+
+.look-all a:after {
+    content: url(../img/arrow.png);
+    position: relative;
+    left: 12px;
+}
+
+.look-all a:hover {
+    text-decoration: underline;
+}
+
+main {
+    margin-bottom: 54rem;
+}
+
+.InterestingProducts {
+    width: 1170rem;
+    height: 536rem;
+    background-image: url(../img/main-bg.jpg);
+    background-repeat: no-repeat;
+    background-color: #c1cfd3;
+    margin: 27rem auto;
+    margin-bottom: 60rem;
+}
+
+.InterestingProductsWrap {
+    padding-left: 71rem;
+    padding-top: 175rem;
+}
+
+h1 {
+    font-size: 46rem;
+    line-height: 48rem;
+    color: #ffffff;
+    margin-bottom: 21rem;
+}
+
+.InterestingProductsWrap p {
+    font-size: 16rem;
+    line-height: 1.5em;
+    color: #ffffff;
+    margin-bottom: 30rem;
+}
+
+.InterestingProductsWrap h2 {
+    font-size: 22rem;
+    letter-spacing: 1px;
+    line-height: 24rem;
+    text-transform: uppercase;
+    color: #0d0d0d;
+    font-weight: 600;
+    text-align: center;
+}
+
+.paragraph {
+    width: 413rem;
+}
+
+.InterestingProductsWrap a {
+    font-size: 14rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #262626;
+    text-align: right;
+    text-decoration: none;
+}
+
+.ButtonBuy {
+    display: flex;
+    width: 230rem;
+    height: 45rem;
+    background-color: #ffffff;
+    transition: 0.5s;
+}
+
+.ButtonBuy:hover {
+    transform: scale(1.05);
+    border-radius: 10rem;
+}
+
+.ProductBuy a {
+    margin-right: 19rem;
+}
+
+.ProductBuy a::after {
+    content: url(../img/arrow.png);
+    position: relative;
+    left: 20rem;
+}
+
+.ProductBuy {
+    width: 230rem;
+    height: 45rem;
+    padding: 12rem 21rem;
+    cursor: url(../css/cursor.cur), auto;
+}
+
+.slider {
+    display: block;
+    position: relative;
+    height: 169rem;
+}
+
+.slide-wrap1 {
+    padding: 18rem 18rem 14rem 20rem;
+}
+
+.slide-wrap2 {
+    padding: 17rem 16rem 15rem 21rem;
+}
+
+.slide1 {
+    margin-bottom: 46rem;
+}
+
+.slide1,
+.slide2 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 46rem;
+    height: 46rem;
+    background-color: #131313;
+    opacity: 0.702;
+}
+
+.slide1:hover,
+.slide2:hover {
+    opacity: 1;
+}
+
+.slide1 a:before {
+    content: url(../img/arrow_f.png);
+}
+
+.slide2 a:before {
+    content: url(../img/arrow_f.png)
+}
+
+figure {
+    cursor: url(../css/cursor.cur), auto;
+}
+
+figcaption img {
+    width: 270rem;
+    height: 190rem;
+    margin-bottom: 25rem;
+}
+
+figcaption a:after {
+    content: url(../css/img/arr-right\ \(2\).png);
+    position: relative;
+    left: 10rem;
+}
+
+.Poslygi {
+    width: 1170rem;
+    margin: auto;
+    margin-bottom: 67rem;
+}
+
+.shop {
+    display: flex;
+    justify-content: space-between;
+    width: 1170rem;
+}
+
+.Poslygi h2 {
+    font-size: 22rem;
+    letter-spacing: 1px;
+    line-height: 24rem;
+    text-transform: uppercase;
+    color: #0d0d0d;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40rem;
+}
+
+figcaption h3 {
+    font-size: 20rem;
+    line-height: 1.2em;
+    color: #0d0d0d;
+    font-weight: bold;
+    margin-bottom: 20rem;
+}
+
+.FigureText {
+    width: 264px;
+    height: 64px;
+    margin-bottom: 20rem;
+}
+
+figcaption p {
+    font-size: 15rem;
+    line-height: 1.4em;
+    color: #262626;
+}
+
+figcaption a {
+    font-size: 13rem;
+    letter-spacing: 1px;
+    line-height: 1.5em;
+    text-transform: uppercase;
+    color: #0067b8;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+figcaption a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+.MacbookForFree {
+    background-image: url(../img/second-main.jpg);
+    width: 1170rem;
+    height: 540rem;
+    margin: auto;
+    margin-bottom: 52rem;
+}
+
+.MacbookForFreeWrap {
+    padding-top: 140rem;
+    padding-left: 65rem;
+}
+
+.MacbookForFree h2 {
+    width: 500rem;
+    font-size: 46rem;
+    line-height: 48rem;
+    color: #0d0d0d;
+    font-weight: bold;
+    margin-bottom: 30rem;
+}
+
+.MacbookForFree article {
+    width: 450rem;
+    margin-bottom: 30rem;
+}
+
+.MacbookForFree p {
+    font-size: 16rem;
+    line-height: 1.5em;
+    color: #0d0d0d;
+}
+
+.MacbookForFree a {
+    font-size: 14rem;
+    letter-spacing: 1px;
+    line-height: 1.7em;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.ButtonMac {
+    width: 230rem;
+    background-color: #0d0d0d;
+    transition: 0.2s;
+    cursor: url(../css/cursor.cur), auto;
+}
+
+.ButtonMac1 {
+    width: 210rem;
+    background-color: #fff;
+    padding: 12.4rem 0 12.4rem 20rem;
+    transition: 0.2s;
+    cursor: url(../css/cursor.cur), auto;
+}
+
+.ButtonMac:hover {
+    transform: scale(1.05);
+    border-radius: 10rem;
+}
+
+.ButtonMac1:hover {
+    transform: scale(1.05);
+    border-radius: 10rem;
+}
+
+.MacbookButton {
+    padding: 10rem 20rem;
+}
+
+.ButtonMac1 a:after {
+    content: url(../img/arrow_f.png);
+    position: relative;
+    left: 15rem;
+}
+
+.MacbookButton a:after {
+    content: url(../img/arrow_f.png);
+    position: relative;
+    height: 10rem;
+    left: 15rem;
+}
+
+.sociality {
+    text-align: center;
+}
+
+.sociality p {
+    opacity: 0.702;
+    font-size: 15rem;
+    line-height: 2em;
+    color: #262626;
+}
+
+.browserslogo {
+    display: flex;
+    column-gap: 14rem;
+    justify-content: center;
+    padding-top: 15rem;
+}
+
+#a1:hover,
+#a2:hover,
+#a3:hover {
+    transform: scale(1.15);
+}
+
+#a1 ,
+#a2 ,
+#a3  {
+    display: block;
+    background-image: url(../css/img/ChroneEdgeOpera.png);
+    width: 35rem;
+    height: 35rem;
+    transition: 0.5s;
+}
+
+a#a2{
+    background-position: -37rem 0;
+}
+
+
+a#a3{
+    background-position: 35rem 0;
+}
+
+footer {
+    width: 100%;
+    height: 337rem;
+    background-color: #f2f2f2;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.FooterWrap {
+    display: block;
+    width: 1170rem;
+    margin: auto;
+    padding-top: 58rem;
+}
+
+.PartsOne {
+    display: flex;
+    justify-content: space-between;
+    width: 1120rem;
+    margin-bottom: 20rem;
+
+}
+
+footer h4 {
+    font-size: 15rem;
+    line-height: 24rem;
+    color: #616161;
+    font-weight: bold;
+    padding-bottom: 24rem;
+}
+
+footer a {
+    display: block;
+    font-size: 13rem;
+    line-height: 19rem;
+    color: #616161;
+    padding-bottom: 16rem;
+    text-decoration: none;
+}
+
+.PartTwo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.langauge {
+    display: flex;
+}
+
+.langauge a:first-child::before {
+    content: url(../css/img/lang.png);
+}
+
+.langauge a:last-child {
+    font-size: 12rem;
+    line-height: 19rem;
+    color: #616161;
+    padding-left: 10rem;
+}
+
+.contacts {
+    display: flex;
+    justify-content: space-between;
+    width: 810rem;
+}
+
+.contacts ul {
+    display: flex;
+    column-gap: 25rem;
+}
