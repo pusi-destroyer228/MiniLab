@@ -21,7 +21,7 @@
                             <a href="index.html">
                                 <picture>
                                     <source srcset="css/img/MiniLabcopy.webp" type="image/webp">
-                                    <img src="css/img/MiniLab copy.png" alt="Логотип сайту MiniLab">
+                                    <img src="css/img/MiniLabcopy.png" alt="Логотип сайту MiniLab">
                                 </picture>
                             </a>
                         </div>
@@ -132,6 +132,8 @@
                                                 </div>
                                             </div>
                                         </div>
+
+
                                     </li>
                                 </ul>
                             </nav>
@@ -140,7 +142,7 @@
                     <div class="SecondPartHeader">
                         <div class="search">
                             <div class="SearchWrap">
-                                <input type="text" placeholder="Пошук на сайті">
+                                <input class="searchInput" type="text" placeholder="Пошук на сайті">
                                 <a href=""></a>
                             </div>
                         </div>
@@ -157,26 +159,61 @@
     </header>
     <main>
         <div class="InterestingProducts">
-            <div class="InterestingProductsWrap">
-                <h1>Цікавий планшет</h1>
-                <div class="paragraph">
-                    <article>
-                        <p>Розкрий потенціал свого пристрою разом з нами
-                            всього за 250 грн/міс.</p>
-                    </article>
+            <div class="dot">
+                <input class="radio" type="radio" id="novaPoshta" name="nova-poshta">
+                <label for="novaPoshta"></label>
+                <input class="radio" type="radio" id="novaPoshtaOne" name="nova-poshta">
+                <label for="novaPoshtaOne"></label>
+            </div>
+            <div class="first" id="first">
+                <div class="InterestingProductsWrap">
+                    <h1>Цікавий планшет</h1>
+                    <div class="paragraph">
+                        <article>
+                            <h3 class="pipi">
+                                Розкрий потенціал свого пристрою разом з нами
+                                    всього за 250 грн/міс.
+                            </h3>
+                        </article>
+                    </div>
+                    <div class="ButtonMac1">
+                        <a href="#">придбати пристрій </a>
+                    </div>
                 </div>
-                <div class="ButtonMac1">
-                    <a href="#">придбати пристрій </a>
+                <div class="slider">
+                    <div class="slide1">
+                        <div class="slide-wrap1"><a href="#"></a></div>
+                    </div>
+                    <div class="slide2">
+                        <div class="slide-wrap2"><a href="#"></a></div>
+                    </div>
                 </div>
             </div>
-            <div class="slider">
-                <div class="slide1">
-                    <div class="slide-wrap1"><a href="#"></a></div>
+            <div class="second" id="second">
+                <div class="InterestingProductsWrap">
+                    <h1>Цікавий планшет</h1>
+                    <div class="paragraph">
+                        <article>
+                            <h3 class="pipi">
+                                Розкрий потенціал свого пристрою разом з нами
+                                    всього за 250 грн/міс.
+                            </h3>
+                        </article>
+                    </div>
+                    <div class="ButtonMac1">
+                        <a href="#">придбати пристрій </a>
+                    </div>
                 </div>
-                <div class="slide2">
-                    <div class="slide-wrap2"><a href="#"></a></div>
+                <div class="slider">
+                    <div class="slide1">
+                        <div class="slide-wrap1"><a href="#"></a></div>
+                    </div>
+                    <div class="slide2">
+                        <div class="slide-wrap2"><a href="#"></a></div>
+                    </div>
                 </div>
             </div>
+            
         </div>
         <div class="Poslygi">
             <h2>перелік вдалих послуг</h2>
@@ -246,8 +283,10 @@
                 <h2>Отримай MacBook
                     безкоштовно</h2>
                 <article>
-                    <p>Залишайтеся на зв’язку, використовуючи будь-які пристрої,
-                        за допомогою безкоштовної поштової служби.</p>
+                    <h3 class="pipi black">
+                        Залишайтеся на зв’язку, використовуючи будь-які пристрої,
+                            за допомогою безкоштовної поштової служби.
+                    </h3>
                 </article>
                 <div class="ButtonMac">
                     <div class="MacbookButton">
@@ -325,7 +364,7 @@
             </div>
             <div class="PartTwo">
                 <div class="langauge">
-                    <a href="#"></a>
+                    <a class="papa" href="#"></a>
                     <a href="#">Вибір мови (Українська)</a>
                 </div>
                 <div class="contacts">
@@ -334,13 +373,27 @@
                         <li><a href="#">Положення про конфіденціальність</a></li>
                         <li><a href="#">Умови використання</a></li>
                         <li><a href="#">Відомості про рекламу</a></li>
-                        <li><a href="#">&copy; MiniLab 2018.</a></li>
+                        <li class="bober">© MiniLab 2018.</li>
                     </ul>
                 </div>
             </div>
         </div>
     </footer>
-
+    <script>
+        novaPoshta.onclick = function() {
+            if(novaPoshta.checked) {
+                first.style.display = "block"
+                second.style.display = "none"
+            } 
+        }
+        novaPoshtaOne.onclick = function() {
+            if(novaPoshtaOne.checked) {
+                second.style.display = "block"
+                first.style.display = "none"
+            }
+        }
+        
+        </script>
 </body>
 
 </html>
