@@ -8,7 +8,7 @@ html {
 }
 
 a {
-    cursor: url(../css/img/cursor.cur), auto;
+    cursor: pointer;
 }
 
 @font-face {
@@ -242,18 +242,18 @@ header ul {
     display: inline-block;
 }
 
-#asas{
+#asas {
+    transition: 0.5s;
+}
+
+.palka {
+    position: absolute;
+    height: 1px;
     width: 150px;
-    transition: 0.2s;
 }
 
 #asas:hover {
-    width: 150px;
     background-color: #f2f2f2;
-}
-
-#asas:hover>a {
-    margin-left: 35rem;
 }
 
 .more:after {
@@ -262,12 +262,28 @@ header ul {
     left: 15rem;
 }
 
-#asas:hover .more:after {
-    content: url(../css/img/arr-down.png);
+.more {
+    width: 80px;
+    height: 60px;
+    transition: 0.5s;
+    position: relative;
+    display: block;
 }
 
-.more {
-    position: relative;
+.more:hover {
+    margin-left: 30px;
+}
+
+.more:hover::before {
+
+    z-index: 1;
+    content: '';
+    background-color: #f2f2f2;
+    right: 0px;
+    width: 110px;
+    height: 3px;
+    position: absolute;
+    bottom: -2px;
 }
 
 .HeaderLineText a {
@@ -467,14 +483,14 @@ main {
 .first {
     display: block;
     z-index: -1;
-    height: 535px;
+    height: 530px;
     background-image: url(../css/img/InterestingTabletBG.jpg);
 }
 
 .second {
     display: none; 
     z-index: -1;
-    height: 535px;
+    height: 530px;
     background-image: url(../css/img/dryga_fotka.svg);
 }
 
@@ -503,10 +519,11 @@ main {
     padding-top: 175rem;
 }
 
-h1 {
+#asa {
+    text-align: left;
     font-size: 46rem;
     line-height: 48rem;
-    color: #ffffff;
+    color: #fff;
     margin-bottom: 21rem;
 }
 
@@ -532,6 +549,7 @@ h1 {
 }
 
 .InterestingProductsWrap a {
+    padding: 12.4rem 20rem 12.4rem 20rem;
     display: block;
     font-size: 14rem;
     letter-spacing: 1px;
@@ -750,8 +768,7 @@ figcaption a:hover {
 }
 
 .ButtonMac1 {
-    width: 210rem;
-    padding: 12.4rem 0 12.4rem 20rem;
+    width: 220rem;
     background-color: #fff;
     transition: 0.2s;
     cursor: url(../css/img/cursor.cur), auto;
@@ -767,6 +784,10 @@ figcaption a:hover {
     border-radius: 10rem;
 }
 
+.ButtonMac1:hover {
+    transform: scale(1.05);
+    border-radius: 10rem;
+}
 
 .ButtonMac1 a:after {
     content: url(../css/img/arr-right.png);
@@ -781,7 +802,7 @@ figcaption a:hover {
     left: 15rem;
 }
 
-.MacbookButton {
+.MacbookButton a {
     padding: 14rem 20rem;
 }
 
