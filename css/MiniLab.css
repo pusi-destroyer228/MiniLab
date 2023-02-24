@@ -605,16 +605,21 @@ li{
     height: 166rem;
 }
 
-.slide-wrap1 {
+.slide-wrap1 a {
     padding: 18rem 18rem 14rem 20rem;
 }
 
-.slide-wrap2 {
+.slide-wrap2 a {
     padding: 17rem 16rem 15rem 21rem;
 }
 
 .slide1 {
     margin-bottom: 46rem;
+}
+
+.slide1 a,
+.slide2 a {
+    display: block;
 }
 
 .slide1,
