@@ -270,17 +270,17 @@ header ul {
     display: block;
 }
 
-.more:hover {
-    margin-left: 30px;
+#asas:hover {
+    padding-right: 30px;
+    padding-left: 30px;
 }
 
-.more:hover::before {
-
+#asas:hover> a::before {
     z-index: 1;
     content: '';
     background-color: #f2f2f2;
-    right: 0px;
-    width: 110px;
+    right: -30px;
+    width: 140px;
     height: 3px;
     position: absolute;
     bottom: -2px;
